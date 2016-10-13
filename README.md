@@ -7,6 +7,6 @@
 # Install dependencies
 yarn install
 # Run all servers
-yarn run
+npm run start
 # Express server listening on port 3001
 ```
