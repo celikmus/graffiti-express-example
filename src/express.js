@@ -1,15 +1,13 @@
 import express from 'express';
 import { json } from 'body-parser';
-import graffiti from '@risingstack/graffiti';
+import graphqlExpress from './graphql-express';
 import schema from './schema';
 
 const app = express();
 
 app.use(json());
 
-app.use(graffiti.express({
-  schema
-}));
+app.use(graphqlExpress({schema}));
 
 // redirect all requests to /graphql
 // to open GraphiQL by default
