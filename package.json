@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "clean": "rm -rf ./dist",
-    "start": "npm run clean && babel src -d dist -s && node dist/index.js"
+    "start": "yarn run clean && babel src -d dist -s && node dist/index.js"
   },
   "dependencies": {
     "@risingstack/graffiti-mongoose": "^5.3.0",
